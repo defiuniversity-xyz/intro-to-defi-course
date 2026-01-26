@@ -1,11 +1,3 @@
----
-course: intro-to-defi
-module: 2
-lesson: 8
-title: "Liquidity Pools"
-description: "How shared token pools enable decentralized trading"
----
-
 # Liquidity Pools
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_08/intro-to-defi_08_header.png)

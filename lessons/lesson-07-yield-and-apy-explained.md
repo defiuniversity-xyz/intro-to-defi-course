@@ -1,11 +1,3 @@
----
-course: intro-to-defi
-module: 2
-lesson: 7
-title: "Yield and APY Explained"
-description: "Understanding how DeFi yield works and what those percentage numbers mean"
----
-
 # Yield and APY Explained
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_07/intro-to-defi_07_header.png)

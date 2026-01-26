@@ -1,11 +1,3 @@
----
-course: intro-to-defi
-module: 3
-lesson: 12
-title: "What to Learn Next"
-description: "Graduating to intermediate DeFi and continuing your education"
----
-
 # What to Learn Next
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_12/intro-to-defi_12_header.png)

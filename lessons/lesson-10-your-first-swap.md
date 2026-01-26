@@ -1,11 +1,3 @@
----
-course: intro-to-defi
-module: 3
-lesson: 10
-title: "Your First Swap"
-description: "Step-by-step guide to making your first trade on a DEX"
----
-
 # Your First Swap
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_10/intro-to-defi_10_header.png)

@@ -1,11 +1,3 @@
----
-course: intro-to-defi
-module: 2
-lesson: 5
-title: "Decentralized Exchanges (DEX)"
-description: "How trading works without a centralized company in the middle"
----
-
 # Decentralized Exchanges (DEX)
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_05/intro-to-defi_05_header.png)

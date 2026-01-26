@@ -1,11 +1,3 @@
----
-course: intro-to-defi
-module: 1
-lesson: 4
-title: "Why DeFi Exists"
-description: "Understanding the problems DeFi was created to solve"
----
-
 # Why DeFi Exists
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_04/intro-to-defi_04_header.png)

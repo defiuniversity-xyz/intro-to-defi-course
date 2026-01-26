@@ -1,11 +1,3 @@
----
-course: intro-to-defi
-module: 2
-lesson: 6
-title: "Lending and Borrowing"
-description: "How DeFi enables loans without banks or credit checks"
----
-
 # Lending and Borrowing
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_06/intro-to-defi_06_header.png)

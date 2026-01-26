@@ -1,11 +1,3 @@
----
-course: intro-to-defi
-module: 1
-lesson: 3
-title: "Traditional vs Decentralized"
-description: "Understanding the key differences between traditional finance and DeFi"
----
-
 # Traditional vs Decentralized
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_03/intro-to-defi_03_header.png)

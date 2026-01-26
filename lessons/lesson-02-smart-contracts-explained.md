@@ -1,11 +1,3 @@
----
-course: intro-to-defi
-module: 1
-lesson: 2
-title: "Smart Contracts Explained"
-description: "How self-executing code enables DeFi without intermediaries"
----
-
 # Smart Contracts Explained
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_02/intro-to-defi_02_header.png)

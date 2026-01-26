@@ -1,11 +1,3 @@
----
-course: intro-to-defi
-module: 1
-lesson: 1
-title: "What is DeFi?"
-description: "Understanding decentralized finance and how it differs from traditional financial services"
----
-
 # What is DeFi?
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_01/intro-to-defi_01_header.png)
