@@ -7,6 +7,7 @@ description: "How to safely connect your wallet to DeFi applications"
 ---
 
 # Connecting Your Wallet
+
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_09/intro-to-defi_09_header.png)
 
 

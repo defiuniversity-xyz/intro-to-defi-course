@@ -7,6 +7,7 @@ description: "Step-by-step guide to making your first trade on a DEX"
 ---
 
 # Your First Swap
+
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_10/intro-to-defi_10_header.png)
 
 
@@ -53,6 +54,7 @@ Bookmarked or carefully typed. Not from search ads or links.
 
 
 ![Inline Analogy](https://storage.googleapis.com/intro-to-defi-media/images/lesson_10/intro-to-defi_10_inline_analogy.png)
+
 Using a DEX like Uniswap as example:
 
 **Step 1: Navigate and Connect**

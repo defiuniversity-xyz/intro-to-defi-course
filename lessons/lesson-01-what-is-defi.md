@@ -7,6 +7,7 @@ description: "Understanding decentralized finance and how it differs from tradit
 ---
 
 # What is DeFi?
+
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_01/intro-to-defi_01_header.png)
 
 
@@ -18,6 +19,7 @@ description: "Understanding decentralized finance and how it differs from tradit
 
 
 ![Inline Analogy](https://storage.googleapis.com/intro-to-defi-media/images/lesson_01/intro-to-defi_01_inline_analogy.png)
+
 Remember comparing crypto to vending machines earlier? DeFi takes this further.
 
 Imagine if instead of just snacks, vending machines could:
@@ -36,6 +38,7 @@ The "vending machine" is a smart contract on blockchain. The rules are code. Any
 
 
 ![Infographic](https://storage.googleapis.com/intro-to-defi-media/images/lesson_01/intro-to-defi_01_infographic.png)
+
 DeFi recreates traditional financial services:
 
 | Traditional | DeFi Equivalent |

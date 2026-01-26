@@ -7,6 +7,7 @@ description: "Understanding how DeFi yield works and what those percentage numbe
 ---
 
 # Yield and APY Explained
+
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_07/intro-to-defi_07_header.png)
 
 

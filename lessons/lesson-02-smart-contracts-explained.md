@@ -7,6 +7,7 @@ description: "How self-executing code enables DeFi without intermediaries"
 ---
 
 # Smart Contracts Explained
+
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_02/intro-to-defi_02_header.png)
 
 
@@ -36,6 +37,7 @@ The key difference: these rules are enforced by code on a blockchain that no one
 
 
 ![Infographic](https://storage.googleapis.com/intro-to-defi-media/images/lesson_02/intro-to-defi_02_infographic.png)
+
 **Writing:** Developers write code defining the contract's rules (in languages like Solidity for Ethereum).
 
 **Deployment:** The code is uploaded to the blockchain, where it gets its own address (like a wallet).

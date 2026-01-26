@@ -7,6 +7,7 @@ description: "Graduating to intermediate DeFi and continuing your education"
 ---
 
 # What to Learn Next
+
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_12/intro-to-defi_12_header.png)
 
 
@@ -66,6 +67,7 @@ DeFi University offers deeper dives into:
 
 
 ![Infographic](https://storage.googleapis.com/intro-to-defi-media/images/lesson_12/intro-to-defi_12_infographic.png)
+
 **Immediate:**
 - Practice what you've learned with small amounts
 - Make a few more swaps until comfortable

@@ -7,6 +7,7 @@ description: "Understanding the key differences between traditional finance and 
 ---
 
 # Traditional vs Decentralized
+
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_03/intro-to-defi_03_header.png)
 
 

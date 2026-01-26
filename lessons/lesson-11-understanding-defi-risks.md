@@ -7,6 +7,7 @@ description: "The unique risks of DeFi and how to mitigate them"
 ---
 
 # Understanding DeFi Risks
+
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_11/intro-to-defi_11_header.png)
 
 

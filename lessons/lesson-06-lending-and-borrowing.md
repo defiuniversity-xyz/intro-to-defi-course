@@ -7,6 +7,7 @@ description: "How DeFi enables loans without banks or credit checks"
 ---
 
 # Lending and Borrowing
+
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_06/intro-to-defi_06_header.png)
 
 
@@ -38,6 +39,7 @@ The "pawn shop" is a smart contract. No negotiation. No credit check. Just math.
 
 
 ![Infographic](https://storage.googleapis.com/intro-to-defi-media/images/lesson_06/intro-to-defi_06_infographic.png)
+
 **For Lenders (Depositors):**
 1. You deposit crypto into a lending protocol
 2. Your deposit joins a lending pool
