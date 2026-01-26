@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Swap Simulator | DeFi University</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+        import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js';
+        const firebaseConfig = { apiKey: "AIzaSyDuGdDF6jYPcZbQTpbGZPwnl3Qynr-LMWc", authDomain: "defi-university-prod.firebaseapp.com", projectId: "defi-university-prod", storageBucket: "defi-university-prod.firebasestorage.app", messagingSenderId: "309871336262", appId: "1:309871336262:web:d2dc4be5729ac1d5a6a347" };
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        let userToken = null; let tracked = false;
+        onAuthStateChanged(auth, async (user) => {
+            if (user) { userToken = await user.getIdToken(); document.getElementById('login-prompt').classList.add('hidden'); document.getElementById('loading-state').classList.add('hidden'); document.getElementById('tool-container').classList.remove('hidden'); }
+            else { document.getElementById('loading-state').classList.add('hidden'); document.getElementById('login-prompt').classList.remove('hidden'); const currentUrl = encodeURIComponent(window.location.href); document.querySelector('#login-prompt a').href = `/login.html?redirect=${currentUrl}`; }
+        });
+        window.trackInteraction = async function() { if (!tracked && userToken) { tracked = true; try { await fetch('https://api.defiuniversity.xyz/api/progress/interaction', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${userToken}` }, body: JSON.stringify({ courseId: 'intro-to-defi', interactionId: 'simple-swap-simulator', type: 'simulator' }) }); document.getElementById('points-badge').classList.remove('hidden'); setTimeout(() => document.getElementById('points-badge').classList.add('hidden'), 2500); } catch (e) { tracked = false; } } };
+    </script>
+    <style>body { font-family: 'Inter', sans-serif; } h1, h2, h3, .brand-font { font-family: 'Space Grotesk', sans-serif; }</style>
+</head>
+<body class="bg-white text-neutral-900 min-h-screen p-4 md:p-8">
+    <div id="loading-state" class="flex items-center justify-center min-h-[400px]"><div class="text-center"><div class="w-8 h-8 border-2 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div><p class="text-neutral-500">Loading...</p></div></div>
+    <div id="login-prompt" class="hidden max-w-md mx-auto text-center py-12"><div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-blue-600"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div><h2 class="text-xl font-semibold mb-2 brand-font">Sign in Required</h2><p class="text-neutral-500 mb-6">Please sign in to use this tool.</p><a href="/login.html" class="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold">Sign In</a></div>
+    
+    <div id="tool-container" class="hidden max-w-lg mx-auto">
+        <div id="points-badge" class="hidden fixed top-4 right-4 bg-green-50 border border-green-200 text-green-600 px-4 py-2 rounded-full text-sm font-semibold z-50">+25 points earned!</div>
+        <div class="text-center mb-8"><h1 class="text-2xl md:text-3xl font-semibold brand-font mb-2">Simple Swap Simulator</h1><p class="text-neutral-500">Experience how a DEX swap works</p></div>
+        
+        <div class="bg-white border border-neutral-200 rounded-xl p-6 shadow-sm space-y-4">
+            <!-- From Token -->
+            <div class="bg-neutral-50 rounded-lg p-4">
+                <div class="flex justify-between mb-2"><span class="text-sm text-neutral-500">You Pay</span><span class="text-xs text-neutral-400">Balance: <span id="balance-from">10.00</span> ETH</span></div>
+                <div class="flex items-center gap-3">
+                    <input type="number" id="from-amount" value="1" min="0" step="0.1" onchange="calculate()" oninput="calculate()" class="flex-1 text-2xl font-semibold bg-transparent border-none focus:outline-none">
+                    <select id="from-token" onchange="calculate()" class="px-3 py-2 bg-white border border-neutral-200 rounded-lg font-medium">
+                        <option value="ETH">ETH</option>
+                        <option value="USDC">USDC</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Swap Arrow -->
+            <div class="flex justify-center"><button onclick="swapTokens()" class="w-10 h-10 bg-neutral-100 border border-neutral-200 rounded-lg flex items-center justify-center hover:bg-neutral-200 transition-colors">↓</button></div>
+            
+            <!-- To Token -->
+            <div class="bg-neutral-50 rounded-lg p-4">
+                <div class="flex justify-between mb-2"><span class="text-sm text-neutral-500">You Receive</span></div>
+                <div class="flex items-center gap-3">
+                    <span id="to-amount" class="flex-1 text-2xl font-semibold">2000</span>
+                    <select id="to-token" onchange="calculate()" class="px-3 py-2 bg-white border border-neutral-200 rounded-lg font-medium">
+                        <option value="USDC">USDC</option>
+                        <option value="ETH">ETH</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Details -->
+            <div class="space-y-2 text-sm">
+                <div class="flex justify-between"><span class="text-neutral-500">Rate</span><span id="rate">1 ETH = 2,000 USDC</span></div>
+                <div class="flex justify-between"><span class="text-neutral-500">Slippage</span><span id="slippage">~0.3%</span></div>
+                <div class="flex justify-between"><span class="text-neutral-500">Network Fee</span><span id="fee">~$2.50</span></div>
+            </div>
+            
+            <button onclick="executeSwap()" id="swap-btn" class="w-full px-6 py-4 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors">Swap</button>
+            
+            <div id="success" class="hidden bg-green-50 border border-green-200 rounded-lg p-4 text-center">
+                <div class="text-3xl mb-2">✅</div>
+                <p class="font-medium text-green-700">Swap Successful!</p>
+                <p class="text-sm text-green-600 mt-1" id="success-details"></p>
+            </div>
+        </div>
+        
+        <div class="mt-6 bg-amber-50 border border-amber-200 rounded-lg p-4"><p class="text-sm font-medium text-amber-700 mb-1">How It Works</p><p id="insight" class="text-sm text-amber-600">This simulates a DEX swap. You're trading with a liquidity pool, not another person. The pool holds both tokens and uses a formula to determine the exchange rate.</p></div>
+    </div>
+
+    <script>
+        const prices = { ETH: 2000, USDC: 1 };
+        let balances = { ETH: 10, USDC: 5000 };
+        
+        function calculate() {
+            const fromToken = document.getElementById('from-token').value;
+            const toToken = document.getElementById('to-token').value;
+            const fromAmount = parseFloat(document.getElementById('from-amount').value) || 0;
+            
+            const fromValue = fromAmount * prices[fromToken];
+            const toAmount = fromValue / prices[toToken];
+            
+            // Simulate slippage
+            const slippage = fromAmount > 5 ? 1.5 : fromAmount > 1 ? 0.5 : 0.1;
+            const afterSlippage = toAmount * (1 - slippage / 100);
+            
+            document.getElementById('to-amount').textContent = afterSlippage.toFixed(2);
+            document.getElementById('rate').textContent = `1 ${fromToken} = ${(prices[fromToken] / prices[toToken]).toFixed(2)} ${toToken}`;
+            document.getElementById('slippage').textContent = `~${slippage}%`;
+            document.getElementById('balance-from').textContent = balances[fromToken].toFixed(2);
+            
+            if (fromAmount > balances[fromToken]) {
+                document.getElementById('swap-btn').textContent = 'Insufficient Balance';
+                document.getElementById('swap-btn').disabled = true;
+            } else {
+                document.getElementById('swap-btn').textContent = 'Swap';
+                document.getElementById('swap-btn').disabled = false;
+            }
+        }
+        
+        function swapTokens() {
+            const from = document.getElementById('from-token');
+            const to = document.getElementById('to-token');
+            const temp = from.value;
+            from.value = to.value;
+            to.value = temp;
+            calculate();
+        }
+        
+        function executeSwap() {
+            const fromToken = document.getElementById('from-token').value;
+            const toToken = document.getElementById('to-token').value;
+            const fromAmount = parseFloat(document.getElementById('from-amount').value);
+            const toAmount = parseFloat(document.getElementById('to-amount').textContent);
+            
+            balances[fromToken] -= fromAmount;
+            balances[toToken] += toAmount;
+            
+            document.getElementById('success-details').textContent = `Swapped ${fromAmount} ${fromToken} for ${toAmount.toFixed(2)} ${toToken}`;
+            document.getElementById('success').classList.remove('hidden');
+            document.getElementById('insight').textContent = `Your swap is complete! In a real DEX, this would be recorded on the blockchain. The slippage represents the price impact of your trade on the liquidity pool.`;
+            
+            calculate();
+            window.trackInteraction();
+            
+            setTimeout(() => document.getElementById('success').classList.add('hidden'), 3000);
+        }
+        
+        calculate();
+    </script>
+</body>
+</html>

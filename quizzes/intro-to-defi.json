@@ -1,0 +1,579 @@
+{
+  "courseId": "intro-to-defi",
+  "courseName": "Introduction to DeFi",
+  "modules": [
+    {
+      "moduleId": "module-01",
+      "moduleNumber": 1,
+      "title": "DeFi: Banking Without Banks",
+      "description": "Understanding what DeFi replaces, smart contracts as vending machines, and the new financial system",
+      "passingScore": 70,
+      "pointsBase": 100,
+      "pointsPerfect": 50,
+      "questions": [
+        {
+          "id": "m1-q1",
+          "question": "What does 'DeFi' stand for?",
+          "options": [
+            {"id": "a", "text": "Definitely Finance"},
+            {"id": "b", "text": "Decentralized Finance - financial services without traditional intermediaries"},
+            {"id": "c", "text": "Digital Financial Institution"},
+            {"id": "d", "text": "Deferred Financing"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "DeFi stands for Decentralized Finance. It's a system of financial services (lending, borrowing, trading, etc.) built on blockchain that operates without traditional banks, brokers, or financial institutions."
+        },
+        {
+          "id": "m1-q2",
+          "question": "Think of a vending machine: you put money in, press a button, and get a snack. No human involved. What crypto concept works similarly?",
+          "options": [
+            {"id": "a", "text": "A cryptocurrency exchange"},
+            {"id": "b", "text": "A smart contract - code that automatically executes when conditions are met"},
+            {"id": "c", "text": "A crypto wallet"},
+            {"id": "d", "text": "A blockchain node"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Smart contracts are like vending machines for money. The code says 'if X happens, do Y' and executes automatically. No bank teller, no approval process - just transparent rules enforced by code."
+        },
+        {
+          "id": "m1-q3",
+          "question": "What traditional financial service does a 'DEX' replace?",
+          "options": [
+            {"id": "a", "text": "A bank vault"},
+            {"id": "b", "text": "A stock exchange or currency exchange - a place to trade assets"},
+            {"id": "c", "text": "A credit card company"},
+            {"id": "d", "text": "An insurance company"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "DEX (Decentralized Exchange) replaces traditional exchanges. Instead of a company matching buyers and sellers and holding funds, smart contracts handle trades directly between users' wallets."
+        },
+        {
+          "id": "m1-q4",
+          "question": "What does a DeFi 'money market' or 'lending protocol' replace?",
+          "options": [
+            {"id": "a", "text": "A grocery store"},
+            {"id": "b", "text": "Bank savings accounts and loans - you can earn interest or borrow without a bank"},
+            {"id": "c", "text": "A stock market"},
+            {"id": "d", "text": "A wallet"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "DeFi lending protocols let you deposit crypto to earn interest (like a savings account) or borrow against your crypto (like a loan), but without bank applications, credit checks, or bankers deciding if you qualify."
+        },
+        {
+          "id": "m1-q5",
+          "question": "Why is DeFi called 'permissionless'?",
+          "options": [
+            {"id": "a", "text": "You don't need to be polite"},
+            {"id": "b", "text": "Anyone with a wallet can use it - no applications, credit checks, or gatekeepers"},
+            {"id": "c", "text": "It's illegal without permission"},
+            {"id": "d", "text": "You can do anything without consequences"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Permissionless means no one can stop you from participating. Traditional finance requires approval - bank account applications, credit checks, etc. DeFi just requires a wallet and funds. Open 24/7, globally accessible."
+        },
+        {
+          "id": "m1-q6",
+          "question": "What is 'composability' in DeFi, sometimes called 'money legos'?",
+          "options": [
+            {"id": "a", "text": "Building physical things with cryptocurrency"},
+            {"id": "b", "text": "Different DeFi protocols can connect and build on each other like building blocks"},
+            {"id": "c", "text": "Composing music with crypto"},
+            {"id": "d", "text": "A type of cryptocurrency"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Because DeFi protocols are open and interoperable, they can be combined like Lego blocks. Deposit to Protocol A, use that as collateral in Protocol B, use that to trade on Protocol C - all in one transaction."
+        },
+        {
+          "id": "m1-q7",
+          "question": "What makes DeFi 'non-custodial'?",
+          "options": [
+            {"id": "a", "text": "You never have to store anything"},
+            {"id": "b", "text": "You keep control of your assets - protocols don't hold your crypto, your wallet does"},
+            {"id": "c", "text": "There are no custody battles"},
+            {"id": "d", "text": "It's a child-free zone"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Non-custodial means no third party holds your funds. When you use DeFi, your crypto stays in your wallet until you make a transaction. You maintain control rather than trusting a company to hold it."
+        },
+        {
+          "id": "m1-q8",
+          "question": "What role do smart contracts play in DeFi?",
+          "options": [
+            {"id": "a", "text": "They're legal agreements between users"},
+            {"id": "b", "text": "They're the automated code that runs financial services without human intermediaries"},
+            {"id": "c", "text": "They're contracts for smart people"},
+            {"id": "d", "text": "They store cryptocurrency"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Smart contracts are the backbone of DeFi. They're programs that automatically execute financial operations - lending, trading, interest distribution - without needing humans to process transactions."
+        },
+        {
+          "id": "m1-q9",
+          "question": "Why is transparency considered a feature of DeFi?",
+          "options": [
+            {"id": "a", "text": "Wallets are see-through"},
+            {"id": "b", "text": "All transactions and code are public, so anyone can verify what's happening"},
+            {"id": "c", "text": "Your personal information is public"},
+            {"id": "d", "text": "It's not actually transparent"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "DeFi code is open-source and transactions are on public blockchains. You can verify exactly how a protocol works, see all transactions, and audit the rules yourself. No hidden fees or mysterious processes."
+        },
+        {
+          "id": "m1-q10",
+          "question": "What is 'TVL' (Total Value Locked) and why do people track it?",
+          "options": [
+            {"id": "a", "text": "Television watching time"},
+            {"id": "b", "text": "The total amount of crypto deposited in a DeFi protocol - a measure of adoption and trust"},
+            {"id": "c", "text": "A type of cryptocurrency"},
+            {"id": "d", "text": "A security rating"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "TVL shows how much money users have deposited into a protocol. Higher TVL often indicates more trust and adoption. It's a common metric for comparing DeFi protocols, though it's not the only thing that matters."
+        },
+        {
+          "id": "m1-q11",
+          "question": "What is the main benefit of DeFi operating 24/7?",
+          "options": [
+            {"id": "a", "text": "You have to watch it constantly"},
+            {"id": "b", "text": "No waiting for banks to open - you can transact, borrow, or trade anytime"},
+            {"id": "c", "text": "Markets never crash"},
+            {"id": "d", "text": "Customer support is always available"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Traditional finance stops on weekends and holidays. DeFi never closes. You can make trades, take loans, or earn interest at 3 AM on Christmas. The blockchain doesn't sleep."
+        },
+        {
+          "id": "m1-q12",
+          "question": "What is a 'DeFi wallet'?",
+          "options": [
+            {"id": "a", "text": "A special wallet only for DeFi"},
+            {"id": "b", "text": "Any self-custody wallet that can connect to DeFi applications"},
+            {"id": "c", "text": "A wallet given to you by a DeFi company"},
+            {"id": "d", "text": "A bank account for DeFi"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Any wallet that lets you interact with DeFi protocols (like MetaMask, Trust Wallet) is a 'DeFi wallet.' It's self-custody - you hold the keys and connect to applications when you want to use them."
+        },
+        {
+          "id": "m1-q13",
+          "question": "What is the main risk of using DeFi compared to traditional banks?",
+          "options": [
+            {"id": "a", "text": "DeFi has no risks"},
+            {"id": "b", "text": "No deposit insurance, smart contract bugs, and you're responsible for your own security"},
+            {"id": "c", "text": "The only risk is lower returns"},
+            {"id": "d", "text": "You have to wear a uniform"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "DeFi removes intermediaries but also their protections. No FDIC insurance, no customer service to fix mistakes, no refunds if code has bugs. You gain freedom but also full responsibility."
+        },
+        {
+          "id": "m1-q14",
+          "question": "What does it mean to 'connect your wallet' to a DeFi app?",
+          "options": [
+            {"id": "a", "text": "Giving the app your seed phrase"},
+            {"id": "b", "text": "Allowing the app to see your address and request transaction approvals"},
+            {"id": "c", "text": "Transferring all funds to the app"},
+            {"id": "d", "text": "Creating a new wallet on the app"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Connecting your wallet lets the app see your address and propose transactions. Your wallet asks you to approve each transaction - you maintain control. Never give apps your seed phrase; that's different and dangerous."
+        },
+        {
+          "id": "m1-q15",
+          "question": "Why do some people say DeFi could help the 'unbanked'?",
+          "options": [
+            {"id": "a", "text": "DeFi is free"},
+            {"id": "b", "text": "Anyone with internet can access financial services without bank requirements"},
+            {"id": "c", "text": "Banks will start accepting crypto"},
+            {"id": "d", "text": "DeFi gives away free money"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Billions of people lack access to banks due to location, documentation, or minimum balance requirements. DeFi only needs internet and a wallet - potentially opening financial services to previously excluded populations."
+        }
+      ]
+    },
+    {
+      "moduleId": "module-02",
+      "moduleNumber": 2,
+      "title": "Swapping Tokens",
+      "description": "Understanding DEXs, liquidity pools, and how trading works without a traditional exchange",
+      "passingScore": 70,
+      "pointsBase": 100,
+      "pointsPerfect": 50,
+      "questions": [
+        {
+          "id": "m2-q1",
+          "question": "What is a DEX (Decentralized Exchange)?",
+          "options": [
+            {"id": "a", "text": "A cryptocurrency created in Texas"},
+            {"id": "b", "text": "A platform for trading tokens without a central company holding your funds"},
+            {"id": "c", "text": "A type of digital wallet"},
+            {"id": "d", "text": "A government-regulated exchange"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "DEXs let you trade cryptocurrency directly from your wallet. Smart contracts handle the exchange - no company takes custody of your funds. You trade peer-to-contract (or peer-to-pool) rather than through a centralized order book."
+        },
+        {
+          "id": "m2-q2",
+          "question": "What is a 'liquidity pool' in simple terms?",
+          "options": [
+            {"id": "a", "text": "A swimming pool at a crypto company"},
+            {"id": "b", "text": "A pot of tokens that people deposit so others can trade against it"},
+            {"id": "c", "text": "A type of cryptocurrency"},
+            {"id": "d", "text": "A savings account"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Think of a liquidity pool as a big pot of two tokens (like ETH and USDC). When you want to trade, you swap with the pool instead of finding another person. People who add tokens to the pool earn fees from trades."
+        },
+        {
+          "id": "m2-q3",
+          "question": "Imagine a currency exchange booth at the airport, but it's a robot that's always open and anyone can deposit money to run it. What is this similar to?",
+          "options": [
+            {"id": "a", "text": "A bank"},
+            {"id": "b", "text": "A liquidity pool and AMM (Automated Market Maker)"},
+            {"id": "c", "text": "A stock exchange"},
+            {"id": "d", "text": "A cryptocurrency wallet"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "An AMM is like a robot currency booth. It holds tokens and automatically quotes prices based on supply and demand. Anyone can deposit tokens (become a liquidity provider) and earn from trades the robot processes."
+        },
+        {
+          "id": "m2-q4",
+          "question": "When you 'swap' tokens on a DEX, what actually happens?",
+          "options": [
+            {"id": "a", "text": "Someone else sends you tokens directly"},
+            {"id": "b", "text": "You send one token to a pool and receive another token back, with prices set by a formula"},
+            {"id": "c", "text": "The DEX company converts your tokens"},
+            {"id": "d", "text": "Nothing moves - it's just numbers changing"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "When you swap, you're trading with a liquidity pool, not a person. You deposit Token A and withdraw Token B. The pool's smart contract calculates the exchange rate based on the ratio of tokens in the pool."
+        },
+        {
+          "id": "m2-q5",
+          "question": "What is 'slippage' in a DEX trade?",
+          "options": [
+            {"id": "a", "text": "When you drop your phone"},
+            {"id": "b", "text": "The difference between the expected price and the actual price you get"},
+            {"id": "c", "text": "A trading strategy"},
+            {"id": "d", "text": "A type of cryptocurrency"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Slippage is the price change between when you submit a trade and when it executes. Large trades in small pools cause more slippage because they significantly change the pool's token ratio, moving the price."
+        },
+        {
+          "id": "m2-q6",
+          "question": "Why might prices be slightly different on different DEXs for the same token?",
+          "options": [
+            {"id": "a", "text": "They're controlled by different companies"},
+            {"id": "b", "text": "Each DEX has different pools with different amounts of liquidity and trading activity"},
+            {"id": "c", "text": "Prices are random"},
+            {"id": "d", "text": "Government regulations set different prices"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Each DEX has its own liquidity pools with different amounts of tokens. Supply and demand in each pool determines price. Traders called 'arbitrageurs' help keep prices similar by profiting from differences."
+        },
+        {
+          "id": "m2-q7",
+          "question": "What is a 'Liquidity Provider' (LP)?",
+          "options": [
+            {"id": "a", "text": "A company that creates cryptocurrencies"},
+            {"id": "b", "text": "Someone who deposits tokens into a pool to enable trading, earning fees in return"},
+            {"id": "c", "text": "A DEX employee"},
+            {"id": "d", "text": "A type of wallet"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Liquidity Providers are regular users who deposit their tokens into pools. They earn a share of the trading fees generated when others swap against the pool. It's like being a mini market maker."
+        },
+        {
+          "id": "m2-q8",
+          "question": "What is a 'trading fee' on a DEX?",
+          "options": [
+            {"id": "a", "text": "A fee to create an account"},
+            {"id": "b", "text": "A small percentage of each trade that goes to liquidity providers"},
+            {"id": "c", "text": "A fee paid to the blockchain developers"},
+            {"id": "d", "text": "A fee paid to the government"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "When you swap on a DEX, you pay a small fee (often 0.3% or less). This fee goes to liquidity providers as their reward for supplying the tokens. It's how they earn income for providing liquidity."
+        },
+        {
+          "id": "m2-q9",
+          "question": "What is a 'gas fee' when using a DEX?",
+          "options": [
+            {"id": "a", "text": "A fee for running your car to the exchange"},
+            {"id": "b", "text": "A fee paid to the blockchain network to process your transaction"},
+            {"id": "c", "text": "A fee paid to the DEX company"},
+            {"id": "d", "text": "A membership fee"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Gas fees are separate from trading fees. They pay the blockchain network (miners/validators) to process your transaction. Gas fees vary based on network congestion and are paid regardless of trade size."
+        },
+        {
+          "id": "m2-q10",
+          "question": "Why might you set a 'slippage tolerance' before swapping?",
+          "options": [
+            {"id": "a", "text": "To make trades faster"},
+            {"id": "b", "text": "To set the maximum price change you'll accept - the trade fails if exceeded"},
+            {"id": "c", "text": "To avoid paying gas fees"},
+            {"id": "d", "text": "It's not important"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Slippage tolerance protects you. If you set 1% and the price moves more than 1% before your trade executes, the transaction fails rather than giving you a bad deal. It's a safety limit."
+        },
+        {
+          "id": "m2-q11",
+          "question": "What does 'token approval' mean before your first swap?",
+          "options": [
+            {"id": "a", "text": "The government approves your token"},
+            {"id": "b", "text": "You permit the DEX's smart contract to access a specific token in your wallet"},
+            {"id": "c", "text": "The DEX approves your trade"},
+            {"id": "d", "text": "Your bank approves the transaction"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Before a smart contract can move your tokens, you must 'approve' it. This is a safety feature - you control which contracts can interact with which tokens. Approval usually costs a small gas fee."
+        },
+        {
+          "id": "m2-q12",
+          "question": "What is a 'token pair' on a DEX?",
+          "options": [
+            {"id": "a", "text": "Two cryptocurrencies dating"},
+            {"id": "b", "text": "The two tokens in a liquidity pool that can be traded for each other"},
+            {"id": "c", "text": "A discount for buying two tokens"},
+            {"id": "d", "text": "A security feature"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "A token pair is the two assets in a liquidity pool. ETH/USDC is a pair - you can swap ETH for USDC or USDC for ETH. The pool needs both tokens to function."
+        },
+        {
+          "id": "m2-q13",
+          "question": "Why is 'deep liquidity' considered good for traders?",
+          "options": [
+            {"id": "a", "text": "It's underwater trading"},
+            {"id": "b", "text": "More liquidity means you can make larger trades with less price impact (slippage)"},
+            {"id": "c", "text": "It means faster transactions"},
+            {"id": "d", "text": "It means lower gas fees"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Deep liquidity means lots of tokens in the pool. Your trade is a smaller percentage of the total, so it moves the price less. A $1,000 trade in a $1 million pool causes less slippage than in a $10,000 pool."
+        },
+        {
+          "id": "m2-q14",
+          "question": "What's an advantage of DEXs over centralized exchanges?",
+          "options": [
+            {"id": "a", "text": "Always lower fees"},
+            {"id": "b", "text": "You maintain custody of your funds until the trade executes - no depositing to an exchange"},
+            {"id": "c", "text": "Faster customer support"},
+            {"id": "d", "text": "Guaranteed profits"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "On a CEX, you deposit funds to the exchange's wallet and trust them. On a DEX, funds stay in your wallet until the actual swap. You're not trusting a company with custody of your assets."
+        },
+        {
+          "id": "m2-q15",
+          "question": "What should you check before swapping a token you've never used before?",
+          "options": [
+            {"id": "a", "text": "Nothing - all tokens are safe"},
+            {"id": "b", "text": "Verify the token contract address to ensure it's the real token, not a fake"},
+            {"id": "c", "text": "Just the price"},
+            {"id": "d", "text": "Check if it's on social media"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Scammers create fake tokens with similar names. Always verify the contract address from the official source. A token named 'Ethereum' might not be real ETH. One wrong character in the address means a completely different (possibly scam) token."
+        }
+      ]
+    },
+    {
+      "moduleId": "module-03",
+      "moduleNumber": 3,
+      "title": "Earning With Your Crypto",
+      "description": "Lending basics, understanding yield, and being aware of DeFi risks",
+      "passingScore": 70,
+      "pointsBase": 100,
+      "pointsPerfect": 50,
+      "questions": [
+        {
+          "id": "m3-q1",
+          "question": "What is 'yield' in DeFi?",
+          "options": [
+            {"id": "a", "text": "A stop sign command"},
+            {"id": "b", "text": "The return or earnings you get from depositing or staking your crypto"},
+            {"id": "c", "text": "A type of cryptocurrency"},
+            {"id": "d", "text": "The price of a token"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Yield is the return on your crypto investment, usually expressed as APY (Annual Percentage Yield). If you deposit $1,000 at 5% APY, you'd earn roughly $50 in a year from yield."
+        },
+        {
+          "id": "m3-q2",
+          "question": "How does lending in DeFi work?",
+          "options": [
+            {"id": "a", "text": "A bank gives you crypto"},
+            {"id": "b", "text": "You deposit crypto to a protocol; borrowers pay interest, which is shared with lenders like you"},
+            {"id": "c", "text": "You lend to friends directly"},
+            {"id": "d", "text": "The government lends you crypto"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "DeFi lending protocols pool deposits from lenders. Borrowers take loans from the pool and pay interest. That interest is distributed to lenders proportionally. All handled automatically by smart contracts."
+        },
+        {
+          "id": "m3-q3",
+          "question": "What is APY?",
+          "options": [
+            {"id": "a", "text": "A type of cryptocurrency"},
+            {"id": "b", "text": "Annual Percentage Yield - the total return including compound interest over a year"},
+            {"id": "c", "text": "A crypto exchange"},
+            {"id": "d", "text": "A type of wallet"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "APY (Annual Percentage Yield) shows what you'd earn in a year if rates stayed constant and earnings were reinvested. 10% APY on $1,000 means roughly $100 in a year, with compounding."
+        },
+        {
+          "id": "m3-q4",
+          "question": "Why do DeFi yields often change?",
+          "options": [
+            {"id": "a", "text": "Random number generators"},
+            {"id": "b", "text": "Supply and demand - rates adjust based on how much is deposited vs. borrowed"},
+            {"id": "c", "text": "Government regulations"},
+            {"id": "d", "text": "They don't change"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "DeFi rates are algorithmic. When lots of people want to borrow and few are lending, rates rise to attract lenders. When there's excess lending supply, rates fall. It's automatic market balancing."
+        },
+        {
+          "id": "m3-q5",
+          "question": "What is 'staking' in simple terms?",
+          "options": [
+            {"id": "a", "text": "Gambling on crypto"},
+            {"id": "b", "text": "Locking up crypto to help secure a network or protocol, earning rewards in return"},
+            {"id": "c", "text": "Selling crypto quickly"},
+            {"id": "d", "text": "A type of trading"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Staking means committing your crypto to support a blockchain (helping validate transactions) or a protocol (providing security). In return, you earn staking rewards - similar to interest but from network participation."
+        },
+        {
+          "id": "m3-q6",
+          "question": "What does 'impermanent loss' mean for liquidity providers?",
+          "options": [
+            {"id": "a", "text": "Loss that's permanent"},
+            {"id": "b", "text": "The potential loss from price changes while your tokens are in a liquidity pool"},
+            {"id": "c", "text": "Losing your password temporarily"},
+            {"id": "d", "text": "A type of scam"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "When you provide liquidity and token prices change significantly, you might end up with less value than if you'd just held the tokens. It's 'impermanent' because it can reverse if prices return to the original ratio."
+        },
+        {
+          "id": "m3-q7",
+          "question": "Why do some DeFi protocols offer extremely high yields (like 100%+ APY)?",
+          "options": [
+            {"id": "a", "text": "They're the best protocols"},
+            {"id": "b", "text": "High yields often come with high risks - newer protocols, token rewards that may lose value, or unsustainable models"},
+            {"id": "c", "text": "They've discovered unlimited money"},
+            {"id": "d", "text": "No particular reason"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Extremely high yields are usually red flags. They might come from token emissions (which can crash in value), unsustainable models, or desperate protocols. 'If it seems too good to be true, it probably is' applies here."
+        },
+        {
+          "id": "m3-q8",
+          "question": "What is 'smart contract risk'?",
+          "options": [
+            {"id": "a", "text": "The risk of signing contracts you don't understand"},
+            {"id": "b", "text": "The risk that bugs or vulnerabilities in the code could cause you to lose funds"},
+            {"id": "c", "text": "The risk of smart people stealing your crypto"},
+            {"id": "d", "text": "There is no such risk"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Smart contracts are code, and code can have bugs. If there's a vulnerability, hackers can exploit it to steal funds. Even audited protocols have been hacked. This is a fundamental risk of DeFi."
+        },
+        {
+          "id": "m3-q9",
+          "question": "Why is it risky to put all your crypto into one DeFi protocol?",
+          "options": [
+            {"id": "a", "text": "It's not risky"},
+            {"id": "b", "text": "If that protocol is hacked or fails, you lose everything - diversification limits damage"},
+            {"id": "c", "text": "You earn less yield"},
+            {"id": "d", "text": "The protocol won't accept it"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Even 'safe' protocols can be hacked, exploited, or face unforeseen problems. Spreading funds across multiple protocols means one failure doesn't wipe out everything. Don't put all eggs in one basket."
+        },
+        {
+          "id": "m3-q10",
+          "question": "What should you research before depositing into a DeFi protocol?",
+          "options": [
+            {"id": "a", "text": "Nothing - just check the APY"},
+            {"id": "b", "text": "Audit history, team reputation, TVL, time in operation, and what could go wrong"},
+            {"id": "c", "text": "Only the token price"},
+            {"id": "d", "text": "Just ask on social media"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Research is crucial: Has it been audited? By whom? How long has it operated without incidents? What's the TVL? Is the team known? What are the specific risks? Understanding what you're using helps you make informed decisions."
+        },
+        {
+          "id": "m3-q11",
+          "question": "What is a 'stablecoin' yield, and why might it be lower than volatile token yields?",
+          "options": [
+            {"id": "a", "text": "A stable, unchanging interest rate"},
+            {"id": "b", "text": "Yield earned on stablecoins - often lower because there's less risk and less demand to borrow"},
+            {"id": "c", "text": "A type of stablecoin"},
+            {"id": "d", "text": "Yields are the same for all tokens"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "Stablecoin yields are often lower because stablecoins are less volatile and there's less speculative demand to borrow them. Higher yields on volatile tokens compensate lenders for price risk."
+        },
+        {
+          "id": "m3-q12",
+          "question": "What does 'harvest' or 'claim' rewards mean?",
+          "options": [
+            {"id": "a", "text": "Farming real crops"},
+            {"id": "b", "text": "Collecting the rewards your position has earned and adding them to your wallet"},
+            {"id": "c", "text": "Starting a new investment"},
+            {"id": "d", "text": "Selling all your crypto"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "When you earn yields, rewards often accumulate in the protocol. 'Harvesting' or 'claiming' means executing a transaction to move those earned tokens to your wallet. Note: claiming usually costs gas."
+        },
+        {
+          "id": "m3-q13",
+          "question": "Why should beginners start with smaller amounts in DeFi?",
+          "options": [
+            {"id": "a", "text": "DeFi rejects large amounts"},
+            {"id": "b", "text": "To learn how it works and understand the risks without exposing significant funds"},
+            {"id": "c", "text": "Small amounts earn more"},
+            {"id": "d", "text": "There's no reason - start big"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "DeFi has a learning curve and real risks. Starting small lets you make mistakes cheaply, understand gas fees, see how protocols work, and build confidence before committing larger amounts."
+        },
+        {
+          "id": "m3-q14",
+          "question": "What is a 'rug pull' risk when farming yield on new tokens?",
+          "options": [
+            {"id": "a", "text": "The floor getting slippery"},
+            {"id": "b", "text": "Project creators draining funds and disappearing, leaving your investment worthless"},
+            {"id": "c", "text": "Losing your seed phrase"},
+            {"id": "d", "text": "A type of trading strategy"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "New, unvetted protocols can be designed to steal funds. Creators might drain liquidity, manipulate token prices, or simply disappear. High yields on new projects often mask rug pull risks. Stick to established protocols when starting."
+        },
+        {
+          "id": "m3-q15",
+          "question": "After completing this beginner track, what's a good next step?",
+          "options": [
+            {"id": "a", "text": "Invest your life savings immediately"},
+            {"id": "b", "text": "Continue to our intermediate courses for deeper knowledge, and practice with small amounts"},
+            {"id": "c", "text": "You've learned everything about DeFi"},
+            {"id": "d", "text": "Stop learning and just trade"}
+          ],
+          "correctAnswer": "b",
+          "explanation": "This introduction covered the basics, but DeFi is deep. Our intermediate courses go into lending protocols, liquidity provision, perpetual futures, and advanced strategies. Practice with small amounts while you continue learning."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First DeFi Action Planner | DeFi University</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js';
+        import { getAuth, onAuthStateChanged } from 'https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js';
+        const firebaseConfig = { apiKey: "AIzaSyDuGdDF6jYPcZbQTpbGZPwnl3Qynr-LMWc", authDomain: "defi-university-prod.firebaseapp.com", projectId: "defi-university-prod", storageBucket: "defi-university-prod.firebasestorage.app", messagingSenderId: "309871336262", appId: "1:309871336262:web:d2dc4be5729ac1d5a6a347" };
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        let userToken = null; let tracked = false;
+        onAuthStateChanged(auth, async (user) => {
+            if (user) { userToken = await user.getIdToken(); document.getElementById('login-prompt').classList.add('hidden'); document.getElementById('loading-state').classList.add('hidden'); document.getElementById('tool-container').classList.remove('hidden'); }
+            else { document.getElementById('loading-state').classList.add('hidden'); document.getElementById('login-prompt').classList.remove('hidden'); const currentUrl = encodeURIComponent(window.location.href); document.querySelector('#login-prompt a').href = `/login.html?redirect=${currentUrl}`; }
+        });
+        window.trackInteraction = async function() { if (!tracked && userToken) { tracked = true; try { await fetch('https://api.defiuniversity.xyz/api/progress/interaction', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${userToken}` }, body: JSON.stringify({ courseId: 'intro-to-defi', interactionId: 'first-defi-action-planner', type: 'planner' }) }); document.getElementById('points-badge').classList.remove('hidden'); setTimeout(() => document.getElementById('points-badge').classList.add('hidden'), 2500); } catch (e) { tracked = false; } } };
+    </script>
+    <style>body { font-family: 'Inter', sans-serif; } h1, h2, h3, .brand-font { font-family: 'Space Grotesk', sans-serif; }</style>
+</head>
+<body class="bg-white text-neutral-900 min-h-screen p-4 md:p-8">
+    <div id="loading-state" class="flex items-center justify-center min-h-[400px]"><div class="text-center"><div class="w-8 h-8 border-2 border-blue-600 border-t-transparent rounded-full animate-spin mx-auto mb-4"></div><p class="text-neutral-500">Loading...</p></div></div>
+    <div id="login-prompt" class="hidden max-w-md mx-auto text-center py-12"><div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-4"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-blue-600"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg></div><h2 class="text-xl font-semibold mb-2 brand-font">Sign in Required</h2><p class="text-neutral-500 mb-6">Please sign in to use this tool.</p><a href="/login.html" class="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold">Sign In</a></div>
+    
+    <div id="tool-container" class="hidden max-w-2xl mx-auto">
+        <div id="points-badge" class="hidden fixed top-4 right-4 bg-green-50 border border-green-200 text-green-600 px-4 py-2 rounded-full text-sm font-semibold z-50">+25 points earned!</div>
+        <div class="text-center mb-8"><h1 class="text-2xl md:text-3xl font-semibold brand-font mb-2">First DeFi Action Planner</h1><p class="text-neutral-500">Get a personalized plan for your first DeFi activity</p></div>
+        
+        <div id="questions" class="bg-white border border-neutral-200 rounded-xl p-6 shadow-sm space-y-6"></div>
+        <div id="plan" class="hidden bg-white border border-neutral-200 rounded-xl p-6 shadow-sm"></div>
+    </div>
+
+    <script>
+        const questions = [
+            { id: 'goal', text: 'What\'s your main goal?', options: ['Earn passive income', 'Swap tokens', 'Learn and experiment', 'Stake ETH'] },
+            { id: 'experience', text: 'Your crypto experience level?', options: ['Brand new', 'Have used exchanges', 'Some DeFi experience'] },
+            { id: 'amount', text: 'How much are you starting with?', options: ['Under $100', '$100-$500', '$500-$2000', 'Over $2000'] }
+        ];
+        
+        let answers = {};
+        let currentQ = 0;
+        
+        function renderQuestion() {
+            if (currentQ >= questions.length) return showPlan();
+            const q = questions[currentQ];
+            document.getElementById('questions').innerHTML = `
+                <div class="mb-4"><span class="text-sm text-neutral-500">Step ${currentQ + 1} of ${questions.length}</span></div>
+                <h3 class="text-lg font-medium mb-4">${q.text}</h3>
+                <div class="space-y-2">${q.options.map((opt, i) => `
+                    <button onclick="answer('${q.id}', '${opt}')" class="w-full text-left px-4 py-3 border border-neutral-200 rounded-lg hover:border-blue-300 hover:bg-blue-50 transition-colors">${opt}</button>
+                `).join('')}</div>
+            `;
+        }
+        
+        function answer(id, value) { answers[id] = value; currentQ++; renderQuestion(); }
+        
+        function showPlan() {
+            const goal = answers.goal;
+            const exp = answers.experience;
+            const amount = answers.amount;
+            
+            let plan = { title: '', steps: [], protocol: '', warning: '' };
+            
+            if (goal === 'Earn passive income') {
+                plan.title = '💰 Earning Passive Income';
+                plan.protocol = exp === 'Brand new' ? 'Aave (on Polygon for low fees)' : 'Aave (Ethereum or Arbitrum)';
+                plan.steps = [
+                    'Set up MetaMask and add the Polygon/Arbitrum network',
+                    'Bridge or buy USDC on your chosen network',
+                    'Go to app.aave.com and connect wallet',
+                    'Click "Supply" and deposit USDC',
+                    'Watch your balance grow with interest!'
+                ];
+                plan.warning = 'Start with stablecoins (USDC) to minimize price risk while learning.';
+            } else if (goal === 'Swap tokens') {
+                plan.title = '🔄 Token Swapping';
+                plan.protocol = 'Uniswap';
+                plan.steps = [
+                    'Set up MetaMask wallet',
+                    'Add ETH or tokens to your wallet',
+                    'Go to app.uniswap.org and connect',
+                    'Select tokens to swap',
+                    'Review rate and fees, then confirm swap'
+                ];
+                plan.warning = 'Always check slippage settings. Start with small swaps to learn.';
+            } else if (goal === 'Learn and experiment') {
+                plan.title = '🧪 Learning & Experimenting';
+                plan.protocol = 'Polygon Network + Various';
+                plan.steps = [
+                    'Set up MetaMask and add Polygon network',
+                    'Get small amount of MATIC for gas',
+                    'Try a swap on QuickSwap (Polygon\'s DEX)',
+                    'Supply a small amount on Aave Polygon',
+                    'Explore DefiLlama.com to discover protocols'
+                ];
+                plan.warning = 'Polygon has very low fees - perfect for learning without expensive mistakes!';
+            } else {
+                plan.title = '⟠ ETH Staking';
+                plan.protocol = 'Lido or Rocket Pool';
+                plan.steps = [
+                    'Ensure you have ETH in your wallet',
+                    'Go to stake.lido.fi or rocketpool.net',
+                    'Connect wallet and enter stake amount',
+                    'Receive stETH/rETH (liquid staking token)',
+                    'Earn staking rewards automatically'
+                ];
+                plan.warning = 'Staked ETH may be locked. Only stake ETH you won\'t need short-term.';
+            }
+            
+            if (amount === 'Under $100') {
+                plan.steps.unshift('Consider using Polygon or Arbitrum for lower fees');
+                plan.warning += ' With under $100, gas fees on Ethereum mainnet could eat a large portion - use Layer 2s!';
+            }
+            
+            document.getElementById('questions').classList.add('hidden');
+            document.getElementById('plan').classList.remove('hidden');
+            document.getElementById('plan').innerHTML = `
+                <h2 class="text-xl font-bold mb-4">${plan.title}</h2>
+                <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
+                    <p class="text-sm text-blue-700"><strong>Recommended Protocol:</strong> ${plan.protocol}</p>
+                </div>
+                <div class="space-y-3 mb-4">
+                    <p class="font-medium">Your Action Plan:</p>
+                    ${plan.steps.map((s, i) => `<div class="flex gap-3 items-start"><span class="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm flex-shrink-0">${i + 1}</span><span class="text-sm">${s}</span></div>`).join('')}
+                </div>
+                <div class="bg-amber-50 border border-amber-200 rounded-lg p-4">
+                    <p class="text-sm text-amber-700"><strong>⚠️ Important:</strong> ${plan.warning}</p>
+                </div>
+                <button onclick="restart()" class="w-full mt-6 px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700">Create New Plan</button>
+            `;
+            window.trackInteraction();
+        }
+        
+        function restart() {
+            answers = {}; currentQ = 0;
+            document.getElementById('questions').classList.remove('hidden');
+            document.getElementById('plan').classList.add('hidden');
+            renderQuestion();
+        }
+        
+        renderQuestion();
+    </script>
+</body>
+</html>
