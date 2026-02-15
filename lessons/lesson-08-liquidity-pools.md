@@ -1,4 +1,16 @@
-# Liquidity Pools
+---
+module: 2
+lesson_number: 8
+course: intro-to-defi
+---
+
+## 🎧 Lesson Podcast
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-08/audio/lesson8%20DeFi_Liquidity_Pools_and_Impermanent_Loss.m4a" %}
+
+## 🎬 Video Overview
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-08/video/lesson8%20What_Are_Liquidity_Pools_.mp4" %}
+
+# Lesson 8: Liquidity Pools
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_08/intro-to-defi_08_header.png)
 
@@ -8,6 +20,8 @@
 ---
 
 ## Community Potluck
+![Inline Analogy](https://storage.googleapis.com/intro-to-defi-media/images/lesson_08/intro-to-defi_08_inline_analogy.png)
+
 
 Imagine a community potluck:
 - Everyone brings a dish (contributes)
@@ -26,6 +40,8 @@ The "potluck" keeps trading possible without needing individual counterparties.
 ---
 
 ## How Pools Work
+![Infographic](https://storage.googleapis.com/intro-to-defi-media/images/lesson_08/intro-to-defi_08_infographic.png)
+
 
 A typical liquidity pool contains two tokens in a pair:
 

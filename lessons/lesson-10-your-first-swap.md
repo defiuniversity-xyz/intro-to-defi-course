@@ -1,4 +1,16 @@
-# Your First Swap
+---
+module: 3
+lesson_number: 10
+course: intro-to-defi
+---
+
+## 🎧 Lesson Podcast
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-10/audio/lesson10%20Executing_Your_First_DeFi_Token_Swap.m4a" %}
+
+## 🎬 Video Overview
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-10/video/lesson10%20Your_First_Token_Swap.mp4" %}
+
+# Lesson 10: Your First Swap
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_10/intro-to-defi_10_header.png)
 
@@ -22,6 +34,8 @@ No account needed. No waiting. Just wallet, connect, swap.
 ---
 
 ## Before Your First Swap
+![Infographic](https://storage.googleapis.com/intro-to-defi-media/images/lesson_10/intro-to-defi_10_infographic.png)
+
 
 **Checklist:**
 

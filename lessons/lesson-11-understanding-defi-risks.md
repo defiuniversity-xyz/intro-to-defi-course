@@ -1,4 +1,16 @@
-# Understanding DeFi Risks
+---
+module: 3
+lesson_number: 11
+course: intro-to-defi
+---
+
+## 🎧 Lesson Podcast
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-11/audio/lesson11%20Smart_Contract_Risks_That_Will_Liquidate_You.m4a" %}
+
+## 🎬 Video Overview
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-11/video/lesson11%20Navigating_DeFi_Hazards.mp4" %}
+
+# Lesson 11: Understanding DeFi Risks
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_11/intro-to-defi_11_header.png)
 
@@ -8,6 +20,8 @@
 ---
 
 ## New Restaurant vs Chain
+![Inline Analogy](https://storage.googleapis.com/intro-to-defi-media/images/lesson_11/intro-to-defi_11_inline_analogy.png)
+
 
 Trying a new restaurant is exciting:
 - Might discover amazing food
@@ -24,6 +38,8 @@ DeFi protocols are like new restaurants. Exciting, potentially rewarding, but al
 ---
 
 ## Smart Contract Risk
+![Infographic](https://storage.googleapis.com/intro-to-defi-media/images/lesson_11/intro-to-defi_11_infographic.png)
+
 
 **The risk:**
 All DeFi runs on code. Code can have bugs. Bugs can be exploited. Exploits drain funds.

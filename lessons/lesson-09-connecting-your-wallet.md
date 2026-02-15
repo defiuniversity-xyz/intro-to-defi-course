@@ -1,4 +1,16 @@
-# Connecting Your Wallet
+---
+module: 3
+lesson_number: 9
+course: intro-to-defi
+---
+
+## 🎧 Lesson Podcast
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-09/audio/lesson9%20Connecting_Your_Wallet_Means_Zero_Safety_Net.m4a" %}
+
+## 🎬 Video Overview
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-09/video/lesson9%20Connecting_Your_Wallet_Safely.mp4" %}
+
+# Lesson 9: Connecting Your Wallet
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_09/intro-to-defi_09_header.png)
 
@@ -8,6 +20,8 @@
 ---
 
 ## Logging In Without a Password
+![Inline Analogy](https://storage.googleapis.com/intro-to-defi-media/images/lesson_09/intro-to-defi_09_inline_analogy.png)
+
 
 Traditional logins:
 - Enter username
@@ -26,6 +40,8 @@ No username. No password. Your wallet IS your identity. Signing proves you own i
 ---
 
 ## Step-by-Step: Connecting
+![Infographic](https://storage.googleapis.com/intro-to-defi-media/images/lesson_09/intro-to-defi_09_infographic.png)
+
 
 1. **Navigate to the DeFi site**
    Verify you're on the legitimate URL (remember: bookmarks!).

@@ -1,4 +1,16 @@
-# What to Learn Next
+---
+module: 3
+lesson_number: 12
+course: intro-to-defi
+---
+
+## 🎧 Lesson Podcast
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-12/audio/lesson12%20Surviving_the_Intermediate_DeFi_Danger_Zone.m4a" %}
+
+## 🎬 Video Overview
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-12/video/lesson12%20What_to_Learn_Next_in_DeFi.mp4" %}
+
+# Lesson 12: What to Learn Next
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_12/intro-to-defi_12_header.png)
 
@@ -8,6 +20,8 @@
 ---
 
 ## Graduating to Intermediate
+![Inline Analogy](https://storage.googleapis.com/intro-to-defi-media/images/lesson_12/intro-to-defi_12_inline_analogy.png)
+
 
 Congratulations! You've learned:
 

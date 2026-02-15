@@ -1,4 +1,16 @@
-# Traditional vs Decentralized
+---
+module: 1
+lesson_number: 3
+course: intro-to-defi
+---
+
+## 🎧 Lesson Podcast
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-03/audio/lesson3%20The_TradFi_Mall_Versus_DeFi_Farmers_Market.m4a" %}
+
+## 🎬 Video Overview
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-03/video/lesson3%20TradFi_vs.mp4" %}
+
+# Lesson 3: Traditional vs Decentralized
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_03/intro-to-defi_03_header.png)
 
@@ -8,6 +20,8 @@
 ---
 
 ## Mall vs Farmers Market
+![Inline Analogy](https://storage.googleapis.com/intro-to-defi-media/images/lesson_03/intro-to-defi_03_inline_analogy.png)
+
 
 **Shopping mall:**
 - One owner controls who can have a store
@@ -30,6 +44,8 @@ DeFi is the farmers market of finance—more open, more direct, more personal re
 ---
 
 ## How They Differ
+![Infographic](https://storage.googleapis.com/intro-to-defi-media/images/lesson_03/intro-to-defi_03_infographic.png)
+
 
 | Aspect | Traditional Finance | DeFi |
 |--------|---------------------|------|

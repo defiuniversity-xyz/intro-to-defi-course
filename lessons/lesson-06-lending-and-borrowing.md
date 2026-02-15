@@ -1,4 +1,16 @@
-# Lending and Borrowing
+---
+module: 2
+lesson_number: 6
+course: intro-to-defi
+---
+
+## 🎧 Lesson Podcast
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-06/audio/lesson6%20DeFi_Lending_Is_A_Digital_Pawn_Shop.m4a" %}
+
+## 🎬 Video Overview
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-06/video/lesson6%20DeFi__The_Digital_Pawn_Shop.mp4" %}
+
+# Lesson 6: Lending and Borrowing
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_06/intro-to-defi_06_header.png)
 
@@ -8,6 +20,8 @@
 ---
 
 ## Pawn Shop with Code
+![Inline Analogy](https://storage.googleapis.com/intro-to-defi-media/images/lesson_06/intro-to-defi_06_inline_analogy.png)
+
 
 Think about how a pawn shop works:
 - You bring valuable items (collateral)

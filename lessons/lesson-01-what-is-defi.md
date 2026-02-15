@@ -1,4 +1,16 @@
-# What is DeFi?
+---
+module: 1
+lesson_number: 1
+course: intro-to-defi
+---
+
+## 🎧 Lesson Podcast
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-01/audio/lesson1%20Replacing_Bankers_With_Code.m4a" %}
+
+## 🎬 Video Overview
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-01/video/lesson1%20What_is_DeFi_.mp4" %}
+
+# Lesson 1: What is DeFi?
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_01/intro-to-defi_01_header.png)
 

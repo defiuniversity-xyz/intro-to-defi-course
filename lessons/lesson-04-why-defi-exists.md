@@ -1,4 +1,16 @@
-# Why DeFi Exists
+---
+module: 1
+lesson_number: 4
+course: intro-to-defi
+---
+
+## 🎧 Lesson Podcast
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-04/audio/lesson4%20Why_Money_Takes_the_Weekend_Off.m4a" %}
+
+## 🎬 Video Overview
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-04/video/lesson4%20Why_DeFi_Exists.mp4" %}
+
+# Lesson 4: Why DeFi Exists
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_04/intro-to-defi_04_header.png)
 
@@ -8,6 +20,8 @@
 ---
 
 ## 24/7 Global Access Story
+![Inline Analogy](https://storage.googleapis.com/intro-to-defi-media/images/lesson_04/intro-to-defi_04_inline_analogy.png)
+
 
 Imagine it's Sunday night. You need to:
 - Exchange some currency urgently
@@ -31,6 +45,8 @@ This isn't a hypothetical. For businesses, travelers, and people in crisis situa
 ---
 
 ## The Inclusion Problem
+![Infographic](https://storage.googleapis.com/intro-to-defi-media/images/lesson_04/intro-to-defi_04_infographic.png)
+
 
 1.4 billion adults globally are "unbanked"—no bank account at all.
 

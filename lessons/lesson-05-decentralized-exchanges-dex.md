@@ -1,4 +1,16 @@
-# Decentralized Exchanges (DEX)
+---
+module: 2
+lesson_number: 5
+course: intro-to-defi
+---
+
+## 🎧 Lesson Podcast
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-05/audio/lesson5%20How_Robot_Referees_Run_Decentralized_Exchanges.m4a" %}
+
+## 🎬 Video Overview
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-05/video/lesson5%20Architecting_the_Swap.mp4" %}
+
+# Lesson 5: Decentralized Exchanges DEX
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_05/intro-to-defi_05_header.png)
 
@@ -8,6 +20,8 @@
 ---
 
 ## Swap Meet with Smart Rules
+![Inline Analogy](https://storage.googleapis.com/intro-to-defi-media/images/lesson_05/intro-to-defi_05_inline_analogy.png)
+
 
 Imagine a swap meet where:
 - No organizer takes your items to hold
@@ -32,6 +46,8 @@ DEXs work differently:
 ---
 
 ## How DEXs Work
+![Infographic](https://storage.googleapis.com/intro-to-defi-media/images/lesson_05/intro-to-defi_05_infographic.png)
+
 
 Most DEXs use "Automated Market Makers" (AMMs):
 

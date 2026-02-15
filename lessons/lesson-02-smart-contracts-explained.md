@@ -1,4 +1,16 @@
-# Smart Contracts Explained
+---
+module: 1
+lesson_number: 2
+course: intro-to-defi
+---
+
+## 🎧 Lesson Podcast
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-02/audio/lesson2%20Smart_Contracts_Are_Digital_Vending_Machines.m4a" %}
+
+## 🎬 Video Overview
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-02/video/lesson2%20Smart_Contracts.mp4" %}
+
+# Lesson 2: Smart Contracts Explained
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_02/intro-to-defi_02_header.png)
 
@@ -8,6 +20,8 @@
 ---
 
 ## If-This-Then-That for Money
+![Inline Analogy](https://storage.googleapis.com/intro-to-defi-media/images/lesson_02/intro-to-defi_02_inline_analogy.png)
+
 
 You've probably used automation before:
 

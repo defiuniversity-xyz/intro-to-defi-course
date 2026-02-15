@@ -1,4 +1,16 @@
-# Yield and APY Explained
+---
+module: 2
+lesson_number: 7
+course: intro-to-defi
+---
+
+## 🎧 Lesson Podcast
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-07/audio/lesson7%20Where_DeFi_Yield_Actually_Comes_From.m4a" %}
+
+## 🎬 Video Overview
+{% embed url="https://storage.googleapis.com/intro-to-defi-media/lesson-07/video/lesson7%20DeFi_Yield_%26_APY_Explained.mp4" %}
+
+# Lesson 7: Yield and APY Explained
 
 ![Header](https://storage.googleapis.com/intro-to-defi-media/images/lesson_07/intro-to-defi_07_header.png)
 
@@ -8,6 +20,8 @@
 ---
 
 ## Interest on Steroids
+![Inline Analogy](https://storage.googleapis.com/intro-to-defi-media/images/lesson_07/intro-to-defi_07_inline_analogy.png)
+
 
 Traditional savings accounts pay maybe 0.5-4% annually. Boring but stable.
 
@@ -27,6 +41,8 @@ But remember: higher returns always mean higher risks. There's no free lunch.
 ---
 
 ## Understanding APY vs. APR
+![Infographic](https://storage.googleapis.com/intro-to-defi-media/images/lesson_07/intro-to-defi_07_infographic.png)
+
 
 **APR (Annual Percentage Rate):**
 The simple annual interest rate. If APR is 12%, you earn 1% per month on your original deposit.
